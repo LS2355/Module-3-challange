@@ -30,6 +30,9 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+li {
+  list-style-type: none;
+}
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -70,6 +73,13 @@ header {
   content: " ";
   display: block;
   clear: both;
+}
+
+/*pop up form*/
+.form-popup {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
 }
 
 .btn {
@@ -115,7 +125,13 @@ button[disabled] {
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
-  overflow: hidden;
+  overflow:unset;
+}
+
+#checkbox-lable{
+color:hsl(360, 91%, 36%);
+font-size: small;
+font-family:sans-serif;
 }
 
 @media (max-width: 690px) {

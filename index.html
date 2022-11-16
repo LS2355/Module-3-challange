@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css " />
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
-      </header>
-      <div class="card">
+       </header>
+      <div class="card"> 
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
@@ -21,14 +21,47 @@
             readonly
             id="password"
             placeholder="Your Secure Password"
-            aria-label="Generated Password"
+            aria-label="Generated Password" 
           ></textarea>
         </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
+
+    <div class="card form-popup" id="popup">
+      <form>
+        <div>
+          <label>Password Length</label>
+          <input type="text" placeholder="8 - 128" name="PW-Char" required>
+        </div>
+        <div>
+          <label>Characters Used:</label>
+            <li>
+              <label for="upperCase" id="checkbox-lable">Upper Case
+              <input type="checkbox" id="upperCase"></label>
+            </li>
+            <li>
+              <label for="lowerCase" id="checkbox-lable">Lower Case
+              <input type="checkbox" id="lowerCase"></label>
+            </li>
+            <li>
+              <label for="numbers" id="checkbox-lable"> Numbers #
+              <input type="checkbox" id="numbers"></label>
+            </li>
+            <li>
+              <label for="specialChar" id="checkbox-lable">Special Characters
+              <input type="checkbox" id="specialChar"></label>
+            </li>
+
+          </div>
+          
+          <button id="Submit"class="btn">Submit</button>
+        
+      </form>
     </div>
-    <script src="script.js"></script>
+    
+    </div>
+    <script src="./assets/password.js"></script>
   </body>
 </html>
