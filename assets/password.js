@@ -87,7 +87,6 @@ function generatePassword() {
 return password;
 };
 
-
 //watches checkboxes
 
 //checks generate button
